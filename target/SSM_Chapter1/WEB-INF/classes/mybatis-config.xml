@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="spring-jdbc.properties"/>
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <typeAliases>
+        <package name="com.powek.common.enumer"/>
+    </typeAliases>
+    <typeHandlers>
+        <typeHandler handler="com.powek.common.enumer.SexTypeHandler" javaType="SexType" jdbcType="INTEGER"/>
+    </typeHandlers>
+</configuration>
